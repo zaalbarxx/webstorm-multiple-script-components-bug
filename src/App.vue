@@ -2,6 +2,8 @@
 import HelloWorld from './components/HelloWorld.vue';
 import TheWelcome from './components/TheWelcome.vue';
 import WelcomeItem from './components/WelcomeItem.vue';
+import EmitsNotInferred from './components/EmitsNotInferred.vue';
+
 </script>
 
 <template>
@@ -9,9 +11,10 @@ import WelcomeItem from './components/WelcomeItem.vue';
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld />
+      <HelloWorld : />
       <TheWelcome />
-      <WelcomeItem />
+      <WelcomeItem :prop="123" @test />
+      <EmitsNotInferred @ />
     </div>
   </header>
 

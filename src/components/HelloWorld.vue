@@ -1,5 +1,5 @@
 <script lang="ts">
-interface Test {
+export interface Test {
   value: 123;
 }
 </script>
@@ -7,6 +7,10 @@ interface Test {
 defineProps<{
   msg: string;
 }>()
+
+defineEmits<{
+  test: [];
+}>();
 </script>
 
 <template>

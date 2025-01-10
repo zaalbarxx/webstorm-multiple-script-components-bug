@@ -3,6 +3,9 @@ defineProps<{
   prop: number
 }>();
 
+defineEmits<{
+  (e: 'test', value: number): void;
+}>();
 </script>
 <template>
   <div class="item">

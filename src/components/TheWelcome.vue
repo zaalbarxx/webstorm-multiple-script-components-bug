@@ -15,6 +15,11 @@ import SupportIcon from './icons/IconSupport.vue'
 defineProps<{
   someProp: number;
 }>();
+
+defineEmits<{
+  test: []
+}>();
+
 const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 </script>
 
